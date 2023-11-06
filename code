@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double a, b, c, u;
+    
+    cin >> a >> b >> u;
+    
+    c = sqrt(a * a + b * b - 2 * a * b * cos(u * 3.1415265359 / 180));
+    
+    c = c * 100;
+    c = (int) c;
+    c = c / 100;
+    
+    cout << fixed << setprecision(2) << c;
+    
+    return 0;
+}
